@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      /* Element Selectors */
+      body {
+        background-color: #333;
+      }
+      /* . is for class, # is for id*/
+      .primary-heading {
+        color: green;
+      }
+      /* # is for id */
+      #welcome {
+        background-color: #f4f4f4;
+      }
+
+      /* Multiple Selectors */
+      #welcome,
+      #about {
+        border: 1px #ccc solid;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      /* Nested Selectors */
+      #about p {
+        color: white;
+      }
+
+      #about {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+        blanditiis ut explicabo hic adipisci illum, earum impedit velit error
+        magni odio vitae repellendus quos neque, consectetur sunt suscipit
+        inventore ullam quas quae. Reiciendis possimus molestiae amet earum
+        provident in modi!
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        doloribus iusto distinctio, consectetur inventore quas nemo cumque illum
+        dignissimos nesciunt et corporis dicta esse vitae maiores sit debitis
+        ipsa possimus minus similique sint harum ratione a tenetur! Voluptas,
+        voluptatem cum.
+      </p>
+    </div>
+  </body>
+</html>

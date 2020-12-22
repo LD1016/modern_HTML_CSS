@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="This is a description" />
+    <meta name="keywords" content="Web development, Web design" />
+    <meta name="robots" content="NO INDEX, NO FOLLOW" />
+    <title>Float & Alignment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 40px auto;
+      }
+
+      .box {
+        background-color: #f4f4f4;
+        border: 2px #333 solid;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .box p {
+        /* Text Align */
+        text-align: left;
+        text-align: right;
+        text-align: center;
+        text-align: justify;
+      }
+
+      .cls {
+        clear: both;
+      }
+
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          dolorem perspiciatis eius, iure rerum molestiae excepturi repellendus
+          omnis corrupti perferendis.
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          dolorem perspiciatis eius, iure rerum molestiae excepturi repellendus
+          omnis corrupti perferendis.
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          dolorem perspiciatis eius, iure rerum molestiae excepturi repellendus
+          omnis corrupti perferendis.
+        </p>
+      </div>
+      <div class="cls"></div>
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          dolorem perspiciatis eius, iure rerum molestiae excepturi repellendus
+          omnis corrupti perferendis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
