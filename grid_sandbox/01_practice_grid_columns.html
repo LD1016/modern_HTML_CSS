@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Columns</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      .box {
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 20px;
+        border: 1px solid #444;
+      }
+
+      .grid {
+        display: grid;
+        /* grid-template-columns: 200px 200px 200px; */
+        /* grid-template-columns: 200px auto 200px; */
+        /* grid-template-columns: repeat(3, 200px); */
+        /* grid-template-columns: repeat(3, auto); */
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 0.5rem;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="grid">
+      <li class="box">Item 1</li>
+      <li class="box">Item 2</li>
+      <li class="box">Item 3</li>
+      <li class="box">Item 4</li>
+      <li class="box">Item 5</li>
+      <li class="box">Item 6</li>
+    </ul>
+    <main>
+      <section>
+        <h1>Welcome to the section 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          deserunt quod perspiciatis quo nobis aut. Similique magnam porro
+          veniam eos nisi inventore eveniet hic iusto voluptas sed ipsam fuga
+          dolor, est, corporis, suscipit quas deleniti placeat illum
+          perferendis! Libero nostrum deserunt commodi dolorum modi ex ut nulla
+          id enim distinctio iusto nobis, iste praesentium voluptates non
+          officiis architecto ad adipisci fugit laudantium ducimus cum quibusdam
+          fugiat. Labore veniam reiciendis consectetur, molestias minima, quia
+          tempora ea ab expedita, doloremque tenetur corporis. Voluptatum quod
+          ratione est dolor, debitis qui, molestiae exercitationem soluta
+          eveniet ipsum sequi. In, odio minima. Nostrum debitis itaque error!
+        </p>
+      </section>
+      <sidebar>
+        <h1>Contact</h1>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </sidebar>
+    </main>
+  </body>
+</html>
